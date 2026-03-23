@@ -37,7 +37,7 @@ public class PlayerFist_left : MonoBehaviour
     IEnumerator DelayedBlock()
     {
         animator.SetBool("blockingL", true);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.075f);
         BlockingL = true;
     }
 
@@ -55,7 +55,8 @@ public class PlayerFist_left : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         PunchingL = true;
         yield return new WaitForSeconds(0.1f);
-        PunchingL = false;
         animator.SetBool("punchingL", false);
+        yield return new WaitForSeconds(0.2f);
+        PunchingL = false;
     }
 }

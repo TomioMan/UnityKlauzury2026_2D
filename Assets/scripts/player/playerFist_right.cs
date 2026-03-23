@@ -39,7 +39,7 @@ public class PlayerFist_right : MonoBehaviour
     IEnumerator DelayedBlock()
     {
         animator.SetBool("blockingR", true);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.075f);
         BlockingR = true;
     }
 
@@ -56,7 +56,8 @@ public class PlayerFist_right : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         PunchingR = true;
         yield return new WaitForSeconds(0.1f);
-        PunchingR = false;
         animator.SetBool("punchingR", false);
+        yield return new WaitForSeconds(0.2f);
+        PunchingR = false;
     }
 }
