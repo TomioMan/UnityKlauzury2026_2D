@@ -908,7 +908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TopDownCamera
   playerTarget: {fileID: 1755703090}
   followSpeed: 2
-  lookAheadDistance: 2
+  lookAheadDistance: 1.5
   playerRb: {fileID: 1755703087}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

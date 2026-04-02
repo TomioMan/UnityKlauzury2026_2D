@@ -4,7 +4,7 @@ public class TopDownCamera : MonoBehaviour
 {
     [SerializeField] private Transform playerTarget;
     [SerializeField] private float followSpeed = 2f;
-    [SerializeField] private float lookAheadDistance = 2f;
+    [SerializeField] private float lookAheadDistance = 1.5f;
     [SerializeField] private Rigidbody2D playerRb;
 
     private Vector3 offset;
