@@ -1,0 +1,12 @@
+﻿title: Test1
+---
+testCharacter: TEST DIALOGUE! TEST DIALOGUE!
+
+testCharacter: do you hear me?
+-> You dont have a voice idiot
+    Awww... gosh dang it!
+-> yeah i hear you loud and clear!
+    Yay im so happy!
+
+testCharacter: I hope the test worked!
+===
