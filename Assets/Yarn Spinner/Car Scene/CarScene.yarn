@@ -1,0 +1,11 @@
+﻿title: CarScene
+---
+<<play_voice TylerNormal>>
+testCharacter: I am talking and this sound will loop forever until the next line!
+
+<<play_voice TylerNormal>>
+testCharacter: Now I am silent.
+
+<<play_voice TylerNormal>>
+testCharacter: I'm trying out a long text, dont mind me. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+===
