@@ -140,7 +140,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: 90982e4b921e23f4ab0360c0b130541e, type: 3}
   dialogueText: {fileID: 668636647}
-  timePerLetter: 0.019
+  timePerLetter: 0.0185
 --- !u!1 &629514762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9078442560890639579, guid: 52571f68872914e24837210513edea1d, type: 3}
