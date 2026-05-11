@@ -17,6 +17,7 @@ public class FloorFader : MonoBehaviour
     {
         foreach (var col in colliders)
         {
+            if (col == null) continue;
             col.enabled = enabled;
         }
     }
@@ -25,6 +26,9 @@ public class FloorFader : MonoBehaviour
     {
         foreach (var s in sprites)
         {
+            // The NULL CHECK: Skip this sprite if it was destroyed
+            if (s == null) continue;
+
             Color c = s.color;
             c.a = alpha;
             s.color = c;
