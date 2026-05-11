@@ -1,11 +1,227 @@
 ﻿title: CarScene
 ---
 <<play_voice TylerNormal>>
-testCharacter: I am talking and this sound will loop forever until the next line!
+<<vehicle_go_to 2.5 0>>
+Tyler: Something on your mind, dear?
+
+<<play_voice youNormal>>
+You: No.
 
 <<play_voice TylerNormal>>
-testCharacter: Now I am silent.
+Tyler: All right, yeah.
+
+<<play_voice youNormal>>
+You: Why wasn't I told about Project Mayhem?
+
+<<play_voice GuysinthebackNormal>>
+Ricky and Mechanic: The first rule of Project Mayhem is you do not ask questions.
+
+<<play_voice youNormal>>
+You: What are you talking about? Why didn't you include me in the beginning?
 
 <<play_voice TylerNormal>>
-testCharacter: I'm trying out a long text, dont mind me. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+<<vehicle_go_to 4.5 0>>
+Tyler: The Fight Club was the beginning. Now it's moved out of the basement. It's called Project Mayhem.
+
+<<play_voice youNormal>>
+You: You and I started Fight Club together. Do you remember that? 
+
+<<play_voice youNormal>>
+You: It's as much mine as it is yours, you know...
+
+<<play_voice TylerNormal>>
+<<vehicle_go_to 2.5 0>>
+Tyler: Is this about you and me?
+
+<<play_voice youNormal>>
+You: Yeah.. I thought we were doing this together.
+<<vehicle_go_to 3.5 0>>
+
+<<play_voice TylerNormal>>
+Tyler: We're missing the point. This does not belong to us...
+<<wait_seconds 1>>
+
+<<alert Stay alert for incoming traffic>>
+<<play_voice TylerNormal>>
+Tyler: We are not special!
+
+<<play_voice youNormal>>
+You: Fuck that! 
+
+<<play_voice youNormal>>
+You: You should have told me!
+<<play_sound Engine_Roar>>
+<<vehicle_go_to -4.5 1>>
+<<wait_seconds 2>>
+
+<<play_voice youNormal>>
+You: Hey, Tyler... damn it, Tyler.
+<<vehicle_go_to 4.5 -1>>
+<<wait_seconds 0.5>>
+<<vehicle_go_to 2.5 0>>
+<<wait_seconds 0.5>>
+
+<<play_voice TylerNormal>>
+Tyler: What do you want? Statement of purpose? 
+
+<<play_voice TylerNormal>>
+Tyler: Should I email you? Should I put this on your action item list? 
+
+<<play_voice TylerNormal>>
+Tyler: You decide your own level of involvement.
+
+<<play_voice youNormal>>
+You: I will. But y'know want to know certain things first!
+
+<<play_voice GuysinthebackNormal>>
+Ricky and Mechanic: The first rule of Project Mayhem is you do not ask que-
+
+<<play_voice youNormal>>
+You: Shut up! 
+<<wait_seconds 3>>
+
+<<play_voice youNormal>>
+You: I want to know what you're thinking...
+
+<<play_voice TylerNormal>>
+Tyler: Fuck what you know! 
+
+<<play_voice TylerNormal>>
+Tyler: You need to forget about what you know. That's your problem.
+
+<<play_voice TylerNormal>>
+Tyler: Forget about what you think you know about life,
+
+<<play_voice TylerNormal>>
+Tyler: about friendship,
+
+<<play_voice TylerNormal>>
+Tyler: and especially about you and me.
+
+<<play_voice youNormal>>
+You: What is that supposed to mean?
+<<play_sound Engine_Roar>>
+<<vehicle_go_to -4.5 1>>
+<<wait_seconds 1>>
+
+<<play_voice TylerNormal>>
+Tyler: Guys, what would you wish you'd done before you died?
+
+<<play_voice GuysinthebackNormal>>
+Ricky: Paint a self-portrait.
+
+<<play_voice GuysinthebackNormal>>
+Mechanic: Build a house.
+
+<<play_voice TylerNormal>>
+Tyler: And you?
+
+<<play_voice youNormal>>
+You: I don't know. Nothing, nothing.
+<<wait_seconds 2>>
+
+<<play_voice youNormal>>
+You: Come on, get out the way.
+<<vehicle_go_to 2.5 0>>
+<<wait_seconds 2>>
+
+<<play_voice TylerNormal>>
+Tyler: You have to know the answers to certain questions... 
+
+<<play_voice TylerNormal>>
+Tyler: If you were to die right now, how would you feel about your life?
+
+<<play_voice youNormal>>
+You: I don't know...
+
+<<play_voice youNormal>>
+You: I wouldn't feel anything good about my life.
+
+<<play_voice youNormal>>
+You: Is that what you want to hear me say? 
+<<wait_seconds 3>>
+
+<<play_voice TylerNormal>>
+Tyler: Not good enough.
+<<play_sound Engine_Roar>>
+<<vehicle_go_to -4.5 1>>
+<<wait_seconds 1>>
+
+<<play_voice youNormal>>
+You: Stop messing around! 
+<<vehicle_go_to 4.5 -1>>
+<<wait_seconds 1>>
+<<play_sound Engine_Roar>>
+<<vehicle_go_to -4.5 1>>
+
+<<play_voice youNormal>>
+You: Tyler! 
+<<vehicle_go_to 4.5 -1>>
+<<wait_seconds 1>>
+
+<<play_voice youNormal>>
+You: God damn it!!!
+<<vehicle_go_to 2.5 0>>
+
+<<play_voice youNormal>>
+You: fuck you. Fuck Fight Club, fuck Marla. 
+
+<<play_voice youNormal>>
+You: I am SICK of all your shit...
+<<wait_seconds 3>>
+
+<<play_voice TylerNormal>>
+Tyler: Okay, man. Okay... 
+
+<<play_voice TylerNormal>>
+Tyler: Quit screwing around. Take the wheel... 
+<<wait_seconds 0.5>>
+<<vehicle_go_to 4.5 -1>>
+<<wait_seconds 1.5>>
+<<vehicle_go_to 2.5 0>>
+
+<<play_voice TylerNormal>>
+Tyler: Look at you. Take the wheel... 
+<<wait_seconds 0.5>>
+<<vehicle_go_to 4.5 1>>
+<<wait_seconds 1.5>>
+<<vehicle_go_to 1.5 0>>
+
+<<play_voice TylerNormal>>
+Tyler: Look at you! You're fucking pathetic.
+
+<<play_voice youNormal>>
+You: Why? Why? What are you talking about?
+
+<<play_voice TylerNormal>>
+Tyler: Why do you think I blew up your condo?
+
+<<play_voice TylerNormal>>
+Tyler: Hitting bottom isn't a weekend retreat. It's not a goddamn seminar.
+
+<<play_voice TylerNormal>>
+Tyler: Stop trying to control everything and just let go. 
+<<wait_seconds 0.5>>
+<<vehicle_go_to 4.5 0>>
+<<wait_seconds 0.5>>
+<<vehicle_go_to 2.5 0>>
+
+<<play_voice TylerNormal>>
+Tyler: Let go!
+
+<<wait_seconds 2>>
+<<play_voice TylerNormal>>
+Tyler: LET GO!
+
+<<wait_seconds 5>>
+<<play_voice youNormal>>
+You: right, fine...
+
+<<inControl false>>
+<<alert Your hands come off of the steering wheel...>>
+<<play_sound Alert_Beep>>
+<<wait_seconds 4>>
+<<alert Your destiny is set...>>
+<<play_sound Alert_Beep>>
+
 ===

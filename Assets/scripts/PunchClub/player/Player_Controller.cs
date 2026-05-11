@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class Player_Controller : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class Player_Controller : MonoBehaviour
             staminaSource2.loop = true;
             staminaSource1.volume = 0;
             staminaSource2.volume = 0;
+            staminaSource2.pitch = 1.1f;
             staminaSource1.Play();
             staminaSource2.Play();
         }
@@ -55,12 +57,14 @@ public class Player_Controller : MonoBehaviour
         UpdateBloodOverlay();
         UpdateStaminaAudio();
 
+        /*
         // Optional: Slowly recover stamina over time
-        if (stamina < maxStamina && IsBlocking() == false)
+         * if (stamina < maxStamina && IsBlocking() == false)
         {
             stamina += Time.deltaTime;
             Debug.Log("Stamina+: " + stamina);
         }
+        */
     }
 
     bool IsBlocking()
@@ -73,8 +77,21 @@ public class Player_Controller : MonoBehaviour
     // playerController.UseStamina();
     public void UseStamina(float amount)
     {
-        stamina -= amount;
-        if (stamina < 0) stamina = 0;
+        if (stamina > 0)
+        {
+            stamina--;
+            Debug.Log("Stamina: " + stamina);
+        }
+    }
+
+    public void doDamage(float amount)
+    {
+        if (health > 0)
+        {
+            health--;
+            Debug.Log($"Health: {health}");
+        }
+
     }
 
     void UpdateStaminaAudio()
@@ -82,17 +99,16 @@ public class Player_Controller : MonoBehaviour
         float staminaPercent = stamina / maxStamina; // 1.0 is full, 0 is empty
         float intensity = 1.0f - staminaPercent;    // 0 is full, 1.0 is empty
 
-        if (staminaPercent > 0.5f)
+        if (staminaPercent > 0.25f)
         {
-            // Phase 1: Fade in Sound 1, Sound 2 stays quiet
             staminaSource1.volume = intensity;
             staminaSource2.volume = 0;
         }
         else
         {
-            // Phase 2: Fade out Sound 1, Fade in Sound 2
-            staminaSource1.volume = staminaPercent;
-            staminaSource2.volume = intensity;
+            staminaSource1.volume = 0;
+
+            staminaSource2.volume = intensity / 2;
         }
     }
 

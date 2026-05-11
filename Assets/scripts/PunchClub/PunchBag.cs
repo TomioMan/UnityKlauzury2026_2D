@@ -3,10 +3,12 @@ using UnityEngine;
 
 public class PunchBag : MonoBehaviour
 {
+    [Header("LINKIGN OBJECTS")]
     [SerializeField] Player_Controller Player;
     [SerializeField] CameraEffects camEffects;
     [SerializeField] PlayerFist_left leftFist;
     [SerializeField] PlayerFist_right rightFist;
+
     [SerializeField] Animator animator;
 
     public int health = 20;
@@ -45,7 +47,6 @@ public class PunchBag : MonoBehaviour
         if (currentTime <= 0)
         {
             int randomNumber = Random.Range(1, 11);
-            Debug.Log("Number: " + randomNumber);
 
             if (randomNumber <= 5)
             {
@@ -62,7 +63,6 @@ public class PunchBag : MonoBehaviour
 
     IEnumerator HitRight()
     {
-        Debug.Log("Bag reacting to RIGHT punch!");
         animator.SetBool("HitRight", true);
         health--;
         yield return new WaitForSeconds(0.1f);
@@ -71,7 +71,6 @@ public class PunchBag : MonoBehaviour
 
     IEnumerator HitLeft()
     {
-        Debug.Log("Bag reacting to LEFT punch!");
         animator.SetBool("HitLeft", true);
         health--;
         yield return new WaitForSeconds(0.1f);
@@ -80,41 +79,39 @@ public class PunchBag : MonoBehaviour
 
     IEnumerator PunchRight()
     {
-        Debug.Log("PunchBag attacking RIGHT...");
         animator.SetBool("PunchRight", true);
         yield return new WaitForSeconds(0.2f);
         animator.SetBool("PunchRight", false);
         yield return new WaitForSeconds(0.5f);
-        Debug.Log("PUNCH");
 
         if (!rightFist.BlockingR && canPunch) //on punch
         {
-            Player.health--;
+            Player.doDamage(1);
             camEffects.PlayHitEffect(0.075f ,0.2f);
         }
         else if (rightFist.BlockingR && canPunch) // on block
         {
+            Player.UseStamina(1);
             camEffects.PlayHitEffect(0.05f, 0.1f);
         }
     }
 
     IEnumerator PunchLeft()
     {
-        Debug.Log("PunchBag attacking LEFT...");
         yield return new WaitForSeconds(0.2f);
         animator.SetBool("PunchLeft", true);
         yield return new WaitForSeconds(0.2f);
         animator.SetBool("PunchLeft", false);
         yield return new WaitForSeconds(0.5f);
-        Debug.Log("PUNCH");
 
-        if (!leftFist.BlockingL && canPunch)
+        if (!leftFist.BlockingL && canPunch) //on punch
         {
-            Player.health--;
+            Player.doDamage(1);
             camEffects.PlayHitEffect(0.075f, 0.2f);
         }
-        else if (leftFist.BlockingL && canPunch)
+        else if (leftFist.BlockingL && canPunch) // on block
         {
+            Player.UseStamina(1);
             camEffects.PlayHitEffect(0.05f, 0.1f);
         }
     }

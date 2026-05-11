@@ -3,9 +3,11 @@ using UnityEngine;
 public class TopDownCamera : MonoBehaviour
 {
     [SerializeField] private Transform playerTarget;
-    [SerializeField] private float followSpeed = 2f;
-    [SerializeField] private float lookAheadDistance = 1.5f;
     [SerializeField] private Rigidbody2D playerRb;
+
+    [Header("VARIABLES")]
+    [SerializeField] public float followSpeed = 2f;
+    [SerializeField] public float lookAheadDistance = 1.5f;
 
     private Vector3 offset;
 

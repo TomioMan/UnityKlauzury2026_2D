@@ -786,11 +786,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player_Controller
   health: 20
   maxHealth: 20
-  stamina: 20
+  stamina: 10
   maxStamina: 20
   staminaSource1: {fileID: 921948947}
   staminaSource2: {fileID: 561641501}
-  staminaClips: []
+  staminaClips:
+  - {fileID: 8300000, guid: 6f0e0460c01562a4fb8956b5c45cd961, type: 3}
+  - {fileID: 8300000, guid: 0cc85737a4682354680059ef6b7a29e3, type: 3}
   bloodSplatterObject: {fileID: 677496383}
   fistR: {fileID: 1368938795}
   fistL: {fileID: 139619106}
@@ -978,7 +980,7 @@ MonoBehaviour:
   rightFist: {fileID: 1368938795}
   animator: {fileID: 1437771522}
   health: 20
-  cycleDuration: 5
+  cycleDuration: 2
   canPunch: 0
 --- !u!212 &1437771520
 SpriteRenderer:

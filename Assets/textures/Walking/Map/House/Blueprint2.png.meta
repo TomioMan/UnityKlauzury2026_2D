@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 2146621bedf604b4c95dc7ef815e33d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2744422051435307923
+    second: Blueprint2_0
+  - first:
+      213: -7844933084530754404
+    second: Blueprint2_1
+  - first:
+      213: 3598809837163296926
+    second: Blueprint2_2
+  - first:
+      213: -8360564332565432145
+    second: Blueprint2_3
+  - first:
+      213: 5243212929884616457
+    second: Blueprint2_4
+  - first:
+      213: -6225107399095795372
+    second: Blueprint2_5
+  - first:
+      213: -6012542442915748121
+    second: Blueprint2_6
+  - first:
+      213: 5312679963113291420
+    second: Blueprint2_7
+  - first:
+      213: -2971853424005099902
+    second: Blueprint2_8
+  - first:
+      213: -7800157525638224243
+    second: Blueprint2_9
+  - first:
+      213: 8730785511939230865
+    second: Blueprint2_10
+  - first:
+      213: 503200190968151276
+    second: Blueprint2_11
+  - first:
+      213: 4893778594936824226
+    second: Blueprint2_12
+  - first:
+      213: 101703688519900593
+    second: Blueprint2_13
+  - first:
+      213: 5000703212031218471
+    second: Blueprint2_14
+  - first:
+      213: 8255538627274351563
+    second: Blueprint2_15
+  - first:
+      213: -7984010715102239687
+    second: Blueprint2_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blueprint2_0
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 525
+        width: 3097
+        height: 3086
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c137e4faad9e9d0800000000000000
+      internalID: -2744422051435307923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_1
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 706
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9cb5d18ce2312390800000000000000
+      internalID: -7844933084530754404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_2
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 696
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98bc46ca7a81f130800000000000000
+      internalID: 3598809837163296926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_3
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 666
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8f2a3290f49fb80800000000000000
+      internalID: -8360564332565432145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_4
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 672
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907f1874162a3c840800000000000000
+      internalID: 5243212929884616457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_5
+      rect:
+        serializedVersion: 2
+        x: 2637
+        y: 696
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4514d347dc9fb99a0800000000000000
+      internalID: -6225107399095795372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_6
+      rect:
+        serializedVersion: 2
+        x: 2853
+        y: 683
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e62c0501882f8ca0800000000000000
+      internalID: -6012542442915748121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_7
+      rect:
+        serializedVersion: 2
+        x: 2866
+        y: 687
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ef3b6574e6ab940800000000000000
+      internalID: 5312679963113291420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_8
+      rect:
+        serializedVersion: 2
+        x: 2898
+        y: 767
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ec5a17e0bd1c6d0800000000000000
+      internalID: -2971853424005099902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_9
+      rect:
+        serializedVersion: 2
+        x: 2911
+        y: 753
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d866e34be0640c390800000000000000
+      internalID: -7800157525638224243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_10
+      rect:
+        serializedVersion: 2
+        x: 3308
+        y: 533
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19cc3495a2bf92970800000000000000
+      internalID: 8730785511939230865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_11
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 553
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecb09958e9bbf600800000000000000
+      internalID: 503200190968151276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_12
+      rect:
+        serializedVersion: 2
+        x: 3417
+        y: 558
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1ae9824b13ae340800000000000000
+      internalID: 4893778594936824226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_13
+      rect:
+        serializedVersion: 2
+        x: 3428
+        y: 562
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd539247f2596100800000000000000
+      internalID: 101703688519900593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_14
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 569
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72396449311166540800000000000000
+      internalID: 5000703212031218471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_15
+      rect:
+        serializedVersion: 2
+        x: 3464
+        y: 574
+        width: 35
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3243c44a0919270800000000000000
+      internalID: 8255538627274351563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueprint2_16
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 588
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9342b634e88133190800000000000000
+      internalID: -7984010715102239687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Blueprint2_0: -2744422051435307923
+      Blueprint2_1: -7844933084530754404
+      Blueprint2_10: 8730785511939230865
+      Blueprint2_11: 503200190968151276
+      Blueprint2_12: 4893778594936824226
+      Blueprint2_13: 101703688519900593
+      Blueprint2_14: 5000703212031218471
+      Blueprint2_15: 8255538627274351563
+      Blueprint2_16: -7984010715102239687
+      Blueprint2_2: 3598809837163296926
+      Blueprint2_3: -8360564332565432145
+      Blueprint2_4: 5243212929884616457
+      Blueprint2_5: -6225107399095795372
+      Blueprint2_6: -6012542442915748121
+      Blueprint2_7: 5312679963113291420
+      Blueprint2_8: -2971853424005099902
+      Blueprint2_9: -7800157525638224243
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
