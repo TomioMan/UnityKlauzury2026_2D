@@ -28,8 +28,10 @@ public class ProximityVisibility : MonoBehaviour
     [Header("INVENTORY STUFF")]
     public InventoryObject inventoryObject;
 
-    [Header("WIRE CUTTER SETTINGS")]
+    [Header("FAT HEIST THINGS")]
     public ItemData wireCuttersItem;
+    public ItemData fatItem;
+    public ItemData lyeItem;
     public GameObject objectToActivate;
     [SerializeField] private bool deleteWholeObject = true;
 
@@ -110,6 +112,41 @@ public class ProximityVisibility : MonoBehaviour
             if (alertSystem != null)
             {
                 alertSystem.ShowAlert("You don't have wire cutters. Try the northern part of the beauty clinic.");
+            }
+        }
+    }
+    
+    public void CheckFatHeist()
+    {
+        if (inventoryObject == null) return;
+        if (fatItem == null || lyeItem == null)
+        {
+            Debug.LogError("Fat or Lye ItemData is not assigned in the Inspector!");
+            return;
+        }
+
+        bool hasEnoughFat = inventoryObject.HasItem(fatItem, 2);
+        bool hasEnoughLye = inventoryObject.HasItem(lyeItem, 2);
+
+        if (hasEnoughFat && hasEnoughLye)
+        {
+
+            if (alertSystem != null)
+            {
+                alertSystem.ShowAlert("You've got everything necessary. Enter the car.");
+            }
+
+            onInteract.Invoke();
+        }
+        else
+        {
+            string missingMessage = "Missing: ";
+            if (!hasEnoughFat) missingMessage += "2 Fat ";
+            if (!hasEnoughLye) missingMessage += "2 Lye";
+
+            if (alertSystem != null)
+            {
+                alertSystem.ShowAlert(missingMessage);
             }
         }
     }

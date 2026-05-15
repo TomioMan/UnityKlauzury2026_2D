@@ -12,14 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88bd26a02acb04248a6ff6805b77e7a7, type: 3}
   m_Name: ObjectSaving
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSaving
-  objectEntries:
-  - objectID: Lye_heist1
-    interactedWith: 1
-  - objectID: Wire Cutters
-    interactedWith: 1
-  - objectID: Fat_heist1
-    interactedWith: 1
-  - objectID: Fat_heist2
-    interactedWith: 1
-  - objectID: Lye_heist2
-    interactedWith: 1
+  objectEntries: []

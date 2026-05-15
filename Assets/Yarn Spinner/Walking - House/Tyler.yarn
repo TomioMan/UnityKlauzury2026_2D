@@ -74,5 +74,52 @@ title: Node_4
 Tyler: Hey, nice to see that you survived the drive!
 
 <<play_voice TylerNormal>>
-Tyler: Now, I 
+Tyler: Now, I'm kinda stationary here so, you'll need to do the work.
+
+<<play_voice TylerNormal>>
+Tyler: There's fat in the dumpsters in the back of the beauty clinic, go around and get that for me.
+
+<<play_voice TylerNormal>>
+Tyler: Search around the area for two Lye canisters, we need those too.
+
+-> Okay, I'll get to it.
+    <<play_voice TylerNormal>>
+    Tyler: Yeah! that's the spirit!
+-> Um... why do we need those two things?
+    <<play_voice TylerNormal>>
+    Tyler: You ask too many questions.
+    <<play_voice TylerNormal>>
+    Tyler: Once we get back to the crib I'll tell you.
+
+<<play_voice TylerNormal>>
+Tyler: Now, go and get to it.
+<<nodeIndex 5>>
+===
+
+title: Node_5
+---
+-> I've got the things you asked for!
+   <<if CheckFatHeist() == true>>
+       Tyler: Perfect. You've got the fat and the lye. Let's get in the car.
+       <<jump Start_Heist>>
+   <<else>>
+       Tyler: You're still missing some stuff. 
+       Tyler: I need 2 tubs of fat and 2 bags of lye before we can move.
+   <<endif>>
+-> What do I need to do again?
+    <<play_voice TylerNormal>>
+    Tyler: You need to turn right by the entrance of the clinic and go around it to the back. 
+    <<play_voice TylerNormal>>
+    Tyler: There you'll find the fat that we need.
+    <<play_voice TylerNormal>>
+    Tyler: Around the area are two Lye canisters, we need those too.
+    <<play_voice TylerNormal>>
+    Tyler: So you need two fat and two lye canisters.
+-> Why are we stealing fat?
+    <<play_voice TylerNormal>>
+    Tyler: You remember when we met... 
+    <<play_voice TylerNormal>>
+    Tyler: on the plane...
+    <<play_voice TylerNormal>>
+    Tyler: What did I have in that suitcase..?
 ===

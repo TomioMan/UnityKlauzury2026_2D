@@ -27,6 +27,12 @@ public class YarnAudioManager : MonoBehaviour
     public AudioSource audioSource;
     public List<AudioClip> audioClips;
 
+    
+    [Header("ENVIROMENTAL SOUNDS")]
+    public ItemData fatItem;
+    public ItemData lyeItem;
+    public InventoryObject inventoryObject;
+    
 
     private float remainingTime = 0f;
     private int lastLetterCount = 0;
@@ -58,8 +64,18 @@ public class YarnAudioManager : MonoBehaviour
         runner.AddCommandHandler<string>("CharSpriteSwap", SwapSpriteInstant);
         // walking
         runner.AddCommandHandler<int>("nodeIndex", nodeIndex);
+        runner.AddFunction("CheckFatHeist", CheckFatHeist);
     }
 
+    public bool CheckFatHeist()
+    {
+        if (inventoryObject == null || fatItem == null || lyeItem == null) return false;
+
+        bool hasEnoughFat = inventoryObject.HasItem(fatItem, 2);
+        bool hasEnoughLye = inventoryObject.HasItem(lyeItem, 2);
+
+        return hasEnoughFat && hasEnoughLye;
+    }
     public void nodeIndex(int index)
     {
         progressSave.TylerDialogueIndex = index;

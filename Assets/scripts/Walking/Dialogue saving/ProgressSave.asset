@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80c36f05a456eb4e9218fd9ec82c855, type: 3}
   m_Name: ProgressSave
   m_EditorClassIdentifier: Assembly-CSharp::ProgressSave
-  TylerDialogueIndex: 2
+  TylerDialogueIndex: 4

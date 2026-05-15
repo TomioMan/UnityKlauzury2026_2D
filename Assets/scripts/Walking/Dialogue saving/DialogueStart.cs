@@ -24,6 +24,12 @@ public class DialogueStart : MonoBehaviour
             TriggerAutomaticDialogue(autoDialogueProject, "Node_1");
             Debug.Log("Conditions for dialogue autostart met.");
         }
+        
+        if (SceneManager.GetActiveScene().name == "Walking - Fat Heist" && progressSave.TylerDialogueIndex == 4)
+        {
+            TriggerAutomaticDialogue(autoDialogueProject, "Node_4");
+            Debug.Log("Conditions for dialogue autostart met.");
+        }
     }
 
     private void TriggerAutomaticDialogue(YarnProject project, string nodeName)

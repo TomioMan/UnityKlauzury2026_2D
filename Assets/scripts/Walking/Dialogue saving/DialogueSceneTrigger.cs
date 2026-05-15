@@ -22,7 +22,7 @@ public class DialogueSceneTrigger : MonoBehaviour
 
     void CheckProgress()
     {
-        if (progressSave.TylerDialogueIndex >= 3)
+        if (progressSave.TylerDialogueIndex == 3)
         {
             // Change from solid wall to a trigger
             if (myCollider != null && !myCollider.isTrigger)
