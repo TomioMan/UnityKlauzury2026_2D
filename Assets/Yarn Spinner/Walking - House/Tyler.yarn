@@ -1,0 +1,78 @@
+﻿// In the House 1
+
+title: Node_1
+---
+<<play_voice TylerNormal>>
+Tyler: Hey man, welcome to the crib!
+
+<<play_voice TylerNormal>>
+Tyler: This is where I live! Pretty spaceous isn't it?
+
+<<play_voice TylerNormal>>
+Tyler: There's a suspicious amount of beds in the upper floor, you can pick any bed you want!
+
+<<play_voice TylerNormal>>
+Tyler:  I sleep in the basement... which is inacessible... so dont worry about taking my bed!
+
+<<play_voice TylerNormal>>
+Tyler: Take a look around, and once you're ready for adventure...
+
+<<play_voice TylerNormal>>
+Tyler: Come to me and we'll go do something!
+
+<<play_voice TylerNormal>>
+Tyler: Also... I know im kinda breaking the fourth wall...
+
+<<play_voice TylerNormal>>
+Tyler: But... do you want me to explain the controls?
+
+-> Yeah, I'd like to know what buttons do what.
+    <<play_voice TylerNormal>>
+    Tyler: To interact with things you press E and you walk with WASD.
+    <<play_voice TylerNormal>>
+    Tyler: If you forget the controls you can pause the game with ESC and look there, I've written them there for you.
+    <<play_voice TylerNormal>>
+    Tyler: You can also press P, which stands for sPecial action... It's kinda funny, heh.
+-> It's okay, I'm an expert!
+    <<play_voice TylerNormal>>
+    Tyler: Heh, I see how it is.
+
+<<play_voice TylerNormal>>
+Tyler: Okay, I wont break the fourth wall again, Promise.
+
+<<play_voice TylerNormal>>
+Tyler: Dont forget, once you're ready for action, come and talk to me okay?
+<<nodeIndex 2>>
+===
+
+title: Node_2
+---
+<<play_voice TylerNormal>>
+Tyler: So, you're ready for some action?
+-> Yeah! let's go!
+    <<play_voice TylerNormal>>
+    Tyler: Isn't someone excited?
+    <<play_voice TylerNormal>>
+    Tyler: Let's go then, go out of the main door and I'll lead the way.
+    <<nodeIndex 3>>
+-> I'd like a bit more time here...
+    <<play_voice TylerNormal>>
+    Tyler: Okay, take your time, there's no rush.
+===
+
+title: Node_3
+---
+<<play_voice TylerNormal>>
+Tyler: Come on, let's go out!
+===
+
+// Fat Stealing
+
+title: Node_4
+---
+<<play_voice TylerNormal>>
+Tyler: Hey, nice to see that you survived the drive!
+
+<<play_voice TylerNormal>>
+Tyler: Now, I 
+===

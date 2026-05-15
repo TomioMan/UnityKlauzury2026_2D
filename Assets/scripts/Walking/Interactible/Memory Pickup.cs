@@ -7,7 +7,13 @@ public class MemoryPickup : MonoBehaviour
 
     void Start()
     {
-        // If we already interacted with this, disappear!
+        // Check if the reference is missing before trying to use it
+        if (objectSaving == null)
+        {
+            Debug.LogError($"ObjectSaving is MISSING on {gameObject.name}! Drag the SO into the inspector.");
+            return;
+        }
+
         if (objectSaving.CheckInteraction(GameObjectName))
         {
             Destroy(this.gameObject);

@@ -2,15 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events; // Required for the UnityEvent dropdown
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement; // Using the New Input System like your other scripts
+using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 public class ProximityVisibility : MonoBehaviour
 {
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
     public AlertSystem alertSystem;
+
+    [Header("YARN SPINNER")]
+    public DialogueRunner dialogueRunner;
+    public ProgressSave progressSave;
 
     [Header("DISTANCE SETTINGS")]
     public float noOpacityDistance = 3f;
@@ -23,12 +28,90 @@ public class ProximityVisibility : MonoBehaviour
     [Header("INVENTORY STUFF")]
     public InventoryObject inventoryObject;
 
+    [Header("WIRE CUTTER SETTINGS")]
+    public ItemData wireCuttersItem;
+    public GameObject objectToActivate;
+    [SerializeField] private bool deleteWholeObject = true;
+
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null) playerTransform = player.transform;
+
+        if (dialogueRunner == null) dialogueRunner = FindFirstObjectByType<DialogueRunner>();
+    }
+
+    public void StartYarnDialogue(YarnProject project)
+    {
+        if (dialogueRunner == null) return;
+        if (dialogueRunner.IsDialogueRunning) return;
+
+        string targetNode = "Node_" + progressSave.TylerDialogueIndex.ToString();
+
+        dialogueRunner.SetProject(project);
+
+        bool nodeExists = false;
+        foreach (var nodeName in project.NodeNames)
+        {
+            if (nodeName == targetNode)
+            {
+                nodeExists = true;
+                break;
+            }
+        }
+
+        if (nodeExists)
+        {
+            dialogueRunner.StartDialogue(targetNode);
+        }
+        else
+        {
+            Debug.LogError($"Yarn Error: No node named '{targetNode}' found in {project.name}!");
+        }
+    }
+
+    public void AdvanceDialogueProgress()
+    {
+        progressSave.TylerDialogueIndex++;
+    }
+
+    public void TryUseWireCutters()
+    {
+        if (inventoryObject == null || wireCuttersItem == null)
+        {
+            Debug.LogError("Inventory or Required Item missing on " + gameObject.name);
+            return;
+        }
+
+        if (inventoryObject.HasItem(wireCuttersItem, 1))
+        {
+            if (objectToActivate != null)
+            {
+                objectToActivate.SetActive(true);
+            }
+
+            inventoryObject.RemoveMultipleItems(wireCuttersItem, 1);
+
+            if (deleteWholeObject)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                Destroy(this);
+            }
+
+            Debug.Log("You cut the fence. Cutters lost in process.");
+        }
+        else
+        {
+            if (alertSystem != null)
+            {
+                alertSystem.ShowAlert("You don't have wire cutters. Try the northern part of the beauty clinic.");
+            }
+        }
     }
 
     void Update()
@@ -55,19 +138,17 @@ public class ProximityVisibility : MonoBehaviour
     }
 
     bool canPickUp = true;
-    public ObjectSaving objectSaving; // Link the new SO
+    public ObjectSaving objectSaving;
     public void AddToInvetory(ItemData item)
     {
         if (canPickUp)
         {
-            // 1. Check Inventory
             if (inventoryObject == null)
             {
                 Debug.LogError($"InventoryObject missing on {gameObject.name}");
                 return;
             }
 
-            // 2. Check Memory System
             if (TryGetComponent<MemoryPickup>(out var memory))
             {
                 if (objectSaving != null)
@@ -80,7 +161,6 @@ public class ProximityVisibility : MonoBehaviour
                 }
             }
 
-            // 3. Check Alert System
             if (alertSystem != null)
             {
                 alertSystem.ShowAlert(item.itemName + " added to inventory!");
@@ -90,7 +170,6 @@ public class ProximityVisibility : MonoBehaviour
                 Debug.LogWarning($"AlertSystem missing on {gameObject.name}. Item added silently.");
             }
 
-            // Proceed with logic
             inventoryObject.AddItem(item);
             canPickUp = false;
             canBeViewed = false;
@@ -101,31 +180,51 @@ public class ProximityVisibility : MonoBehaviour
         }
     }
 
+    public void RemoveItems(ItemData requiredItem, int requiredAmount)
+    {
+        if (inventoryObject == null) return;
+
+        if (inventoryObject.HasItem(requiredItem, requiredAmount))
+        {
+            inventoryObject.RemoveMultipleItems(requiredItem, requiredAmount);
+
+            if (alertSystem != null)
+            {
+                alertSystem.ShowAlert($"-{requiredAmount} {requiredItem.itemName}");
+            }
+
+            onInteract.Invoke();
+        }
+        else
+        {
+            if (alertSystem != null)
+            {
+                alertSystem.ShowAlert($"Missing: {requiredAmount} {requiredItem.itemName}");
+            }
+            Debug.Log("Interaction blocked: Not enough items.");
+        }
+    }
+
     private bool isAlerting = false;
 
     public void Alert(string commaSeparatedAlerts)
     {
         if (isAlerting) return;
-
         List<string> alertList = new List<string>(commaSeparatedAlerts.Split(','));
-
         StartCoroutine(AlertRoutine(alertList));
     }
 
     private IEnumerator AlertRoutine(List<string> alerts)
     {
         isAlerting = true;
-
         foreach (string message in alerts)
         {
             if (alertSystem != null)
             {
                 alertSystem.ShowAlert(message);
             }
-
             yield return new WaitForSeconds(3.5f);
         }
-
         isAlerting = false;
     }
 

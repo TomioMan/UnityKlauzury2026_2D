@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Position Save
   m_EditorClassIdentifier: Assembly-CSharp::PositionSaving
   saveEntries:
-  - sceneName: Walking scene
+  - sceneName: Walking - House
     playerPosition: {x: 2.636411, y: -5.1776705, z: 0}

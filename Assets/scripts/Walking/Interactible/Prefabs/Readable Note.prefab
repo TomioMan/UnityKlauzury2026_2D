@@ -119,8 +119,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: There's a recipe on the counter, You pick it up and read
-            it, "Lye + Fat = Soap",  "By - Tyler"
+          m_StringArgument: Placeholder
           m_BoolArgument: 0
         m_CallState: 2
   inventoryObject: {fileID: 11400000, guid: f8d61b41a70dda24b9033bf39a0519de, type: 2}

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Walking scene.unity
+    path: Assets/Scenes/Walking - House.unity
     guid: 6d26ccc50f9f7404c95711cd45eb5d3b
   - enabled: 1
     path: Assets/Scenes/PunchClub.unity
@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cooking.unity
     guid: 217cf00124614e44d8e6b4730a5c82cf
+  - enabled: 1
+    path: Assets/Scenes/Intro Menu.unity
+    guid: 32c3e88a3672a7a40a0c7afda4eb2a92
+  - enabled: 1
+    path: Assets/Scenes/Outro.unity
+    guid: b0128060db0df5742b2379ef1ee39319
+  - enabled: 1
+    path: Assets/Scenes/Walking - Fat Heist.unity
+    guid: ed77043cc5fe09a4da5ac92927449e7e
   - enabled: 1
     path: Assets/Scenes/Talking.unity
     guid: f864b98589ff97e408090a9786c1da8f

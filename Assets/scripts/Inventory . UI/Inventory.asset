@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: Inventory
   m_EditorClassIdentifier: Assembly-CSharp::InventoryObject
   items:
-  - {fileID: 11400000, guid: 7a156ad3f80966f48a9a595f7ee4d5fd, type: 2}
+  - {fileID: 11400000, guid: f9e859f69111a074794ec39c0751ff57, type: 2}
+  - {fileID: 11400000, guid: f9a99f01d7d97fd42a9667962b1167c2, type: 2}
+  - {fileID: 11400000, guid: f9a99f01d7d97fd42a9667962b1167c2, type: 2}
+  - {fileID: 11400000, guid: f9e859f69111a074794ec39c0751ff57, type: 2}
+  - {fileID: 11400000, guid: f9a99f01d7d97fd42a9667962b1167c2, type: 2}
+  - {fileID: 11400000, guid: f9a99f01d7d97fd42a9667962b1167c2, type: 2}
+  - {fileID: 11400000, guid: f9e859f69111a074794ec39c0751ff57, type: 2}

@@ -39,6 +39,7 @@ public class YarnAudioManager : MonoBehaviour
     public AlertSystem alertSystem;
     public Crash crashObj1;
     public Crash crashObj2;
+    public ProgressSave progressSave;
 
     private void Awake()
     {
@@ -55,9 +56,16 @@ public class YarnAudioManager : MonoBehaviour
         originalPosition = targetRenderer.transform.position;
         runner.AddCommandHandler<string>("CharSprite", SwapAndPop);
         runner.AddCommandHandler<string>("CharSpriteSwap", SwapSpriteInstant);
+        // walking
+        runner.AddCommandHandler<int>("nodeIndex", nodeIndex);
     }
 
-    public void PlayVoice(string clipName)
+    public void nodeIndex(int index)
+    {
+        progressSave.TylerDialogueIndex = index;
+    }
+
+        public void PlayVoice(string clipName)
     {
         currentClip = voiceClips.Find(c => c.name == clipName);
         if (currentClip != null)

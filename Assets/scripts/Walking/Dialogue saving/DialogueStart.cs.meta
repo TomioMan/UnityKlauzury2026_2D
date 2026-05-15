@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 99beedf5c9200ca4b873aa15e2ac213e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - progressSave: {fileID: 11400000, guid: f3f527f5a78895d46b149108da5a6bf6, type: 2}
+  - dialogueRunner: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

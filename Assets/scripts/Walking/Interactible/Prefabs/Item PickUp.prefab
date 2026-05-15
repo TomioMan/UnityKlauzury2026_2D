@@ -119,7 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44bad6a76f909994c80d1031b06b3c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProximityVisibility
-  alertSystem: {fileID: 0}
+  alertSystem: {fileID: 542269882658847095, guid: 928d2980c9a1a4f46838c1445c3aa889, type: 3}
+  dialogueRunner: {fileID: 0}
+  progressSave: {fileID: 11400000, guid: f3f527f5a78895d46b149108da5a6bf6, type: 2}
   noOpacityDistance: 4
   transitionOpacityDistance: 2
   onInteract:
@@ -138,5 +140,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   inventoryObject: {fileID: 11400000, guid: f8d61b41a70dda24b9033bf39a0519de, type: 2}
+  wireCuttersItem: {fileID: 0}
+  objectToActivate: {fileID: 0}
+  deleteWholeObject: 1
   objectSaving: {fileID: 11400000, guid: 479cc2ab52f889b42becb644b6e30b7f, type: 2}
   positionSaving: {fileID: 11400000, guid: 1e6d36ebf77fa394494f1be7c0a49905, type: 2}

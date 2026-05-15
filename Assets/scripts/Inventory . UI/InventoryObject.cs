@@ -18,4 +18,25 @@ public class InventoryObject : ScriptableObject
             items.Remove(item);
         }
     }
+
+    public bool HasItem(ItemData item, int amount)
+    {
+        int count = 0;
+        foreach (var i in items)
+        {
+            if (i == item) count++;
+        }
+        return count >= amount;
+    }
+
+    public void RemoveMultipleItems(ItemData item, int amount)
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            if (items.Contains(item))
+            {
+                items.Remove(item);
+            }
+        }
+    }
 }
